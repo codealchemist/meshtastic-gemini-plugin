@@ -1,0 +1,26 @@
+{
+  "name": "@meshtastic-node-client/meshtastic-gemini-plugin",
+  "version": "1.0.0",
+  "description": "Gemini AI plugin for meshtastic-node-client",
+  "license": "ISC",
+  "author": "Alberto Miranda",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codealchemist/meshtastic-gemini-plugin.git"
+  },
+  "meshtasticPlugin": {
+    "name": "gemini",
+    "description": "Gemini AI plugin for meshtastic-node-client. Listens for messages starting with TRIGGER_TEXT (default \"G, \"), sends the remainder to the Google Gemini API, and broadcasts the reply to the channel. Required env: GEMINI_API_KEY. Optional env: GEMINI_TRIGGER_TEXT, GEMINI_MODEL, GEMINI_MAX_LENGTH, GEMINI_CHUNK_SIZE, GEMINI_USE_WS."
+  },
+  "keywords": [
+    "meshtastic",
+    "plugin",
+    "gemini",
+    "ai"
+  ]
+}
